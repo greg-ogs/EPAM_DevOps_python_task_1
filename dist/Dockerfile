@@ -5,6 +5,6 @@ ENTRYPOINT ["/bin/bash"]
 
 WORKDIR /app
 
-COPY requirements.txt .
+COPY pytask-0.1.0-py3-none-any.whl .
 
-RUN pip install -r requirements.txt
+RUN pip install pytask-0.1.0-py3-none-any.whl
