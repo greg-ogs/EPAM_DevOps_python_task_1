@@ -4,7 +4,7 @@ Nov 2024
 '''
 
 # Example of the first part
-
+import sys
 from pytask.Classes import Dictionary, Tiket, WordConcatenator
 
 if __name__ == '__main__':
@@ -13,7 +13,6 @@ if __name__ == '__main__':
     d.add("Banana", "A yellow fruit")
     print(d.lookup("Banana"))  # Output: A yellow fruit
     print(d.lookup("Apple"))  # Output: Word not found in the dictionary.
-    sys.exit(0)
 
     # For part 2
     items_and_costs = {
@@ -38,4 +37,5 @@ if __name__ == '__main__':
     # words = ["soda", "best", "has", "net", "hello", "yes", "computer"]
     concatenator = WordConcatenator(words)
     result = concatenator.concatenate()
-    print(result)  # Output: yes
+    print(result)
+    sys.exit(0)
